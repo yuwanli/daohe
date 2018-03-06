@@ -1,0 +1,34 @@
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="title" content="" />
+<meta name="keywords" content="" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<script type="text/javascript">
+    ! function (a) {
+        function b() {
+            var p =
+                /iphone|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|android|iPod/i
+                .test(navigator.userAgent.toLowerCase())
+            a.rem = p ? (f.getBoundingClientRect().width / 16) : (375 / 16), f.style.fontSize = a.rem + "px"
+        }
+        var c, d = a.navigator.appVersion.match(/iphone/gi) ? a.devicePixelRatio : 1,
+            e = 1 / d,
+            f = document.documentElement,
+            g = document.createElement("meta");
+        if (a.dpr = d, a.addEventListener("resize", function () {
+                clearTimeout(c), c = setTimeout(b, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(c), c = setTimeout(b, 300))
+            }, !1), f.setAttribute("data-dpr", d), g.setAttribute("name", "viewport"), g.setAttribute("content",
+                "initial-scale=" + e + ", maximum-scale=" + e + ", minimum-scale=" + e + ", user-scalable=no"), f.firstElementChild)
+            f.firstElementChild.appendChild(g);
+        else {
+            var h = document.createElement("div");
+            h.appendChild(g), document.write(h.innerHTML)
+        }
+        b();
+    }(window);
+</script>

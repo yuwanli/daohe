@@ -1,0 +1,158 @@
+@import '~commons/less/common.less';
+@bs: 46.875rem;
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #fff;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30/@bs;
+  height: 108/@bs;
+  background-color: #fff;
+  color: #333;
+  font-size: 24/@bs;
+  line-height: 108/@bs;
+
+  .border-bottom1px;
+
+  .cloum_one {
+    flex: 1;
+    padding-right: 40/@bs;
+    background-image: url('/daohe/arrow.png');
+    background-position: right center;
+    background-size: 12/@bs auto;
+    background-repeat: no-repeat;
+
+    .line1();
+  }
+  .cloum_two {
+    flex: 0 0 100/@bs;
+    margin: 0 80/@bs;
+
+    .line1();
+  }
+  .cloum_three {
+    display: flex;
+    align-items: center;
+    flex: 0 0 120/@bs;
+
+    .line1();
+    .btn {
+      display: inline-block;
+      width: 100%;
+      height: 68/@bs;
+      background-color: #eeeeee;
+      color: #878787;
+      text-align: center;
+      line-height: 68/@bs;
+    }
+    select {
+      padding-left: 10/@bs;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
+.index {
+  background-color: #fff;
+  &_top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30/@bs;
+    height: 88/@bs;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 20/@bs;
+    .text {
+      color: #333;
+      font-size: 24/@bs;
+      span {
+        margin-left: 60/@bs;
+        text-decoration: underline;
+      }
+    }
+    input {
+      flex: 0 0 175/@bs;
+      width: 175/@bs;
+      height: 50/@bs;
+      border: none;
+      background-color: #fff;
+      text-align: center;
+      &[name='brand'] {
+        flex: 1;
+        margin-right: 20/@bs;
+      }
+      &[name='name'] {
+        display: none;
+      }
+    }
+    select {
+      flex: 0 0 175/@bs;
+      padding-left: 20/@bs;
+      width: 175/@bs;
+      height: 50/@bs;
+      border: none;
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+
+      appearance: none;
+      .box-sizing(@type: border-box);
+    }
+    .search {
+      flex: 0 0 78/@bs;
+      margin-right: 20/@bs;
+      margin-left: 10/@bs;
+      width: 78/@bs;
+      height: 50/@bs;
+      border-radius: 9/@bs;
+      background-color: #debd98;
+      background-image: url('/daohe/search.png');
+      background-position: center;
+      background-size: 22/@bs auto;
+      background-repeat: no-repeat;
+    }
+    .create {
+      flex: 0 0 200/@bs;
+      width: 200/@bs;
+      height: 50/@bs;
+      border-radius: 9/@bs;
+      background-color: #fff;
+      text-align: center;
+      line-height: 50/@bs;
+    }
+  }
+  &_title {
+    position: fixed;
+    top: 88/@bs;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    height: 50/@bs;
+    color: #878787;
+    line-height: 50/@bs;
+    .cloum_one {
+      background: none;
+    }
+  }
+  &_main {
+    padding-top: 138/@bs;
+    &[data-role='3'] {
+      .wrapper .cloum_one[data-status='1'] {
+        background: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import '~commons/less/common.less';
+@bs: 46.875rem;
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+.door {
+  &_nav {
+    padding: 0 30/@bs;
+    color: #333;
+    font-size: 20/@bs;
+    line-height: 88/@bs;
+  }
+  &_top {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10/@bs;
+    padding: 0 30/@bs;
+    background-color: #fff;
+    line-height: 100/@bs;
+    &.sticky {
+      position: sticky;
+    }
+    &.fixed {
+      position: fixed;
+      z-index: 201;
+      display: none;
+      &.show {
+        display: flex;
+      }
+    }
+    .name {
+      color: #333;
+      font-weight: bold;
+      font-size: 28/@bs;
+
+      .line1();
+    }
+    .group {
+      display: flex;
+      span,
+      a {
+        display: inline-block;
+        margin-left: 20/@bs;
+        padding: 0 15/@bs;
+        height: 66/@bs;
+        background-color: #eee;
+        color: #000;
+        font-size: 22/@bs;
+        line-height: 66/@bs;
+      }
+    }
+  }
+  &_content {
+    background-color: #fff;
+    .item {
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+      // justify-content: space-between;
+      padding: 0 30/@bs;
+      height: 80/@bs;
+      line-height: 80/@bs;
+
+      .border-bottom1px;
+      &.no-data {
+        display: block;
+        text-align: center;
+      }
+      &.bold {
+        font-weight: bold;
+      }
+      .cloum_one {
+        flex: 0 0 245/@bs;
+        width: 245/@bs;
+
+        .line1();
+      }
+      .cloum_two {
+        flex: 150/@bs;
+        margin-right: 90/@bs;
+        width: 150/@bs;
+        text-align: center;
+
+        .line1();
+      }
+      .cloum_three {
+        flex: 0 0 208/@bs;
+        width: 208/@bs;
+
+        .line1();
+        &.btn {
+          height: 66/@bs;
+          background-color: #eee;
+          text-align: center;
+          line-height: 66/@bs;
+        }
+      }
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30/@bs;
+      height: 100/@bs;
+      font-weight: bold;
+      font-size: 28/@bs;
+      line-height: 100/@bs;
+
+      .border-bottom1px;
+      .right {
+        flex: 0 0 208/@bs;
+        width: 208/@bs;
+        height: 66/@bs;
+        text-align: center;
+        line-height: 66/@bs;
+        &.add {
+          display: none;
+          text-align: center;
+          font-size: 40/@bs;
+        }
+        &.btn {
+          background-color: #eee;
+          text-align: center;
+          font-weight: lighter;
+          font-size: 24/@bs;
+        }
+      }
+    }
+  }
+}

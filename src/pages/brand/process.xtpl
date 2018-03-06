@@ -1,0 +1,8 @@
+{{#if(this.length === 0)}}<div class="item no-data">更进记录为空～</div>{{/if}}
+{{#each(this)}}
+<div class="item flex" data-detail="{{content}}" open-detail>
+    <div class="cloum_one">{{create_time}}</div>
+    <div class="cloum_two">{{aname}}</div>
+    <div class="cloum_three">{{content}}</div>
+</div>
+{{/each}}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('/src/units/layout/header_daohe.html') %>
+        <title>道和品牌管理系统</title>
+</head>
+
+<body>
+    <section class="form">
+        <div class="form_nav">
+            首页 > 品牌创建
+        </div>
+        <form action="" id="form">
+            <input type="hidden" name="id">
+            <div class="control">
+                <div class="label">所属品类</div>
+                <div class="con">
+                    <select name="sortid" id="sortList">
+                        <option value="">请选择</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">成立时间</div>
+                <div class="con">
+                    <input name="cdate" type="text" placeholder="请输入成立时间">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">公司名称</div>
+                <div class="con">
+                    <input name="company" type="text" placeholder="请输入公司名称">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">品牌名称</div>
+                <div class="con">
+                    <input name="title" type="text" placeholder="请输入品牌名称">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">负责人</div>
+                <div class="con">
+                    <input name="director" type="text" placeholder="请输入负责人">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">负责人电话</div>
+                <div class="con">
+                    <input name="director_mobile" type="number" placeholder="请输入负责人电话">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">合作意愿</div>
+                <div class="con radio">
+                    <span>
+                        <input checked value="1" name="cooperation" type="radio">待定</span>
+                    <span>
+                        <input value="2" name="cooperation" type="radio">否</span>
+                    <span>
+                        <input value="3" name="cooperation" type="radio">是</span>
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">信息来源</div>
+                <div class="con">
+                    <input name="source" type="text" placeholder="请输入信息来源">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">备注</div>
+                <div class="con">
+                    <input name="remark" type="text" placeholder="请输入备注">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">是否注册品牌</div>
+                <div class="con radio">
+                    <span>
+                        <input value="1" name="register" type="radio">是</span>
+                    <span>
+                        <input checked value="2" name="register" type="radio">否</span>
+
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">推荐理由</div>
+                <div class="con">
+                    <input name="recommend" type="text" placeholder="请输入推荐理由">
+                </div>
+            </div>
+        </form>
+        <div class="btnGroup">
+            <div class="btn back">返回</div>
+            <div class="btn sure">提交</div>
+        </div>
+    </section>
+    <script type="text/javascript" src="/assets_daohe/libs/zepto.min.js"></script>
+</body>
+
+</html>

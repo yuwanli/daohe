@@ -1,0 +1,12 @@
+<div class="JL_menu" id="JL_menu">
+    <img src="/images/close.png" class="close" alt="">
+    <ul class="menu_list">
+        <li>2017秋季上新系列-雅秋时光</li>
+        <li>2017夏季系列-清禾美人</li>
+        <li>2017春季上新—绿莺歌</li>
+        <li>2017秋季上新系列-雅秋时光</li>
+        <li>2017夏季系列-清禾美人</li>
+        <li>2017春季上新—绿莺</li>
+    </ul>
+    <div class="cover"></div>
+</div>

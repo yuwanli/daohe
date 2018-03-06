@@ -1,0 +1,12 @@
+{{#if(this.length === 0)}}<div class="item no-data">股东信息为空～</div>{{/if}}
+{{#each(this)}}
+<div class="item flex" id="{{id}}">
+    <div class="cloum_one">{{name}}</div>
+    <div class="cloum_two" data-percent="{{percent}}">{{percent}}%</div>
+    {{#if(is_edit)}}
+    <div class="cloum_three btn" data-id="{{id}}">编辑</div>
+    {{else}}
+    <div class="cloum_three"></div>
+    {{/if}}
+</div>
+{{/each}}

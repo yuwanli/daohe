@@ -1,0 +1,12 @@
+<div class="brand_info text">
+    <div class="item">品类：{{sort_name || '无'}}</div>
+    <div class="item">成立时间：{{cdate || '无'}}</div>
+    <div class="item">公司名称：{{company || '无'}}</div>
+    <div class="item">负责人：{{director || '无'}}</div>
+    <div class="item">负责人电话：{{director_mobile || '无'}}</div>
+    <div class="item">合作意愿：{{cooperation_name || '无'}}</div>
+    <div class="item">信息来源：{{source || '无'}}</div>
+    <div class="item">备注：{{remark || '无'}}</div>
+    <div class="item">是否注册品牌：{{register_name || '无'}}</div>
+    <div class="item" data-detail="{{recommend}}" open-detail>推荐理由：{{recommend || '无'}}</div>
+</div>

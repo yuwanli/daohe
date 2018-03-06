@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('/src/units/layout/header_daohe.html') %>
+        <title>道和品牌管理系统</title>
+</head>
+
+<body>
+    <section class="J_detail">
+        <div class="cover"></div>
+        <div class="content">
+            <div class="text"></div>
+        </div>
+        <img src="/daohe/close.png" class="close" alt="">
+    </section>
+    <section class="J_confirm">
+        <div class="cover"></div>
+        <div class="content">
+            <h1>填写跟进记录</h1>
+            <textarea id="process" name="content" id="" cols="30" rows="8"></textarea>
+            <div class="btn-group">
+                <div class="btn cancel">取消</div>
+                <div class="btn sure">提交</div>
+            </div>
+        </div>
+        <img src="/daohe/close.png" class="close" alt="">
+    </section>
+    <section class="J_partner">
+        <div class="cover"></div>
+        <div class="content">
+            <h1>股东信息</h1>
+            <input name='name' placeholder="请输入股东姓名" type="text">
+            <input name='percent' style="margin-bottom:0" placeholder="请输入股东的占比" type="number">
+            <div class="btn-group">
+                <div class="btn cancel">取消</div>
+                <div class="btn sure">提交</div>
+            </div>
+        </div>
+        <img src="/daohe/close.png" class="close" alt="">
+    </section>
+    <section class="brand" id="brand">
+        <div class="brand_nav">
+            首页 > 品牌列表 > 品牌详情
+        </div>
+        <div class="brand_container">
+            <div class="brand_top top" id="top">
+                <div class="name"></div>
+                <div class="group">
+                    <span id="doorList">门店列表</span>
+                    <span id="editBrand">修改</span>
+                    <!-- apply 申请结案   sure 确认结案 -->
+                    <span data-status="apply" id="handleOne">申请结案</span>
+                    <!-- back退回公海  more 退回重审-->
+                    <span data-statu="back" id="handleTwo">申请结案</span>
+                </div>
+            </div>
+            <div class="brand_content">
+                <div class="brand_info">
+
+                </div>
+                <div class="brand_partner">
+                    <div class="title">
+                        <span>股东信息</span>
+                        <span id="newPartner" class="right add">+</span>
+                    </div>
+                    <div class="item flex bold">
+                        <div class="cloum_one">姓名</div>
+                        <div class="cloum_two">占比</div>
+                        <div class="cloum_three"></div>
+                    </div>
+
+
+                </div>
+                <div class="brand_process">
+                    <div class="title">
+                        <span>跟进记录</span>
+                        <span id="newProcess" class="right btn">填写跟进记录</span>
+                    </div>
+                    <div class="item flex bold">
+                        <div class="cloum_one">时间</div>
+                        <div class="cloum_two">操作人</div>
+                        <div class="cloum_three">跟进记录</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="/assets_daohe/libs/zepto.min.js"></script>
+</body>
+
+</html>

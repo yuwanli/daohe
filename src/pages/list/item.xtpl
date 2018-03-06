@@ -1,0 +1,7 @@
+{{#if(this.length === 0)}}当前门店列表数据为空{{/if}}
+{{#each(this)}}
+<div class="item">
+    <h1>{{name}}</h1>
+    <p>{{province_label}} {{city_label}} {{area_label}} {{addr}}</p>
+</div>
+{{/each}}

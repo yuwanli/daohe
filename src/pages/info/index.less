@@ -1,0 +1,133 @@
+@import "~commons/less/common.less";
+@bs:46.875rem;
+html{
+    position: relative;
+    height: 100%;
+}
+body{
+    background-color: #eeeeee;
+    height: 100%;
+}
+.info{
+    &_nav{
+        line-height: 88/@bs;
+        padding: 0 30/@bs;
+        color: #333;
+        font-size: 20/@bs;
+        
+    }
+    &_top{
+        line-height: 100/@bs;
+        background-color: #fff;
+        padding: 0 30/@bs;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        margin-bottom: 10/@bs;
+        &.sticky{
+            position: sticky;
+        }
+        &.fixed{
+            position: fixed;
+            display: none;
+            z-index: 201;
+            &.show{
+                display: flex;
+            }
+        }
+        .name{
+            color: #333;
+            font-weight: bold;
+            font-size: 28/@bs;
+        }
+        .group{
+            display: flex;
+            span{
+                display: inline-block;
+                padding: 0 20/@bs;
+                line-height: 66/@bs;
+                background-color: #eee;
+                height: 66/@bs;
+                margin-left: 25/@bs;
+            }
+        }
+    }
+    &_content{
+        background-color: #fff;
+        .item{
+            height: 80/@bs;
+            line-height: 80/@bs;
+            padding: 0 30/@bs;
+            .border-bottom1px;
+            display: flex;
+            overflow: hidden;
+            justify-content: space-between;
+            &.bold{
+                font-weight: bold;
+            }
+            .cloum_one{
+                width: 245/@bs;
+                flex: 0 0 245/@bs;
+                .line1();
+            }
+            .cloum_two{
+                width: 150/@bs;
+                flex: 150/@bs;
+                margin-right: 90/@bs;
+                text-align: center;
+                .line1();
+            }
+            .cloum_three{
+                width: 208/@bs;
+                flex: 0 0 208/@bs;
+                .line1();
+                &.btn{
+                    display: flex;
+                    align-items: center;
+                }
+                span{
+                    line-height: 66/@bs;
+                    background-color: #eee;
+                    height: 66/@bs;
+                    height: 66/@bs;
+                    flex: 1;
+                    text-align: center;
+                }
+            }
+        }
+        .title{
+            height: 100/@bs;
+            line-height: 100/@bs;
+            display: flex;
+            padding: 0 30/@bs;
+            align-items: center;
+            font-weight: bold;
+            font-size: 28/@bs;
+            .border-bottom1px;
+            justify-content: space-between;
+            .right{
+                width: 208/@bs;
+                height: 66/@bs;
+                line-height: 66/@bs;
+                flex: 0 0 208/@bs;
+                text-align: center;
+                &.add{
+                    font-size: 40/@bs;
+                    text-align: center;
+                }
+                &.btn{
+                    background-color: #eee;
+                    font-size: 24/@bs;
+                    font-weight: lighter;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

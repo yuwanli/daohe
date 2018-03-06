@@ -1,0 +1,146 @@
+@import '~commons/less/common.less';
+@bs: 46.875rem;
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #eeeeee;
+}
+.list {
+  &_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30/@bs;
+    color: #333;
+    font-size: 20/@bs;
+    line-height: 88/@bs;
+    .btn {
+      width: 130/@bs;
+      height: 50/@bs;
+      background-color: #fff;
+      text-align: center;
+      line-height: 50/@bs;
+    }
+  }
+  &_top {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10/@bs;
+    padding: 0 30/@bs;
+    background-color: #fff;
+    line-height: 100/@bs;
+    &.sticky {
+      position: sticky;
+    }
+    &.fixed {
+      position: fixed;
+      z-index: 201;
+      display: none;
+      &.show {
+        display: flex;
+      }
+    }
+    .name {
+      color: #333;
+      font-weight: bold;
+      font-size: 28/@bs;
+    }
+    .group {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 24/@bs;
+      input {
+        flex: 0 0 190/@bs;
+        width: 190/@bs;
+        height: 50/@bs;
+        background-color: #eee;
+        text-align: center;
+        line-height: 50/@bs;
+      }
+      .search {
+        flex: 0 0 64/@bs;
+        margin-left: 10/@bs;
+        width: 64/@bs;
+        height: 50/@bs;
+        border-radius: 9/@bs;
+        background-color: #debd98;
+        background-image: url('/daohe/search.png');
+        background-position: center;
+        background-size: 22/@bs auto;
+        background-repeat: no-repeat;
+        line-height: 50/@bs;
+      }
+      a {
+        display: inline-block;
+        margin-left: 20/@bs;
+        padding: 0 20/@bs;
+        height: 50/@bs;
+        background-color: #eee;
+        color: #000;
+        line-height: 50/@bs;
+      }
+    }
+  }
+  &_content {
+    background-color: #fff;
+    &.no-data {
+      background: none;
+      .list_info {
+        margin-top: 200/@bs;
+        text-align: center;
+      }
+    }
+    .item {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 70/@bs 0 30/@bs;
+      height: 106/@bs;
+
+      .border-bottom1px;
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 30/@bs;
+        width: 12/@bs;
+        height: 21/@bs;
+        background-image: url('/daohe/arrow.png');
+        background-size: 12/@bs auto;
+        background-repeat: no-repeat;
+        content: '';
+        transform: translateY(-50%);
+      }
+      h1 {
+        margin-bottom: 10/@bs;
+        color: #333;
+        font-size: 28/@bs;
+        line-height: 30/@bs;
+
+        .line1();
+      }
+      p {
+        padding-left: 25/@bs;
+        background-image: url('/daohe/address.png');
+        background-position: left center;
+        background-size: 14/@bs auto;
+        background-repeat: no-repeat;
+        color: #878787;
+        font-size: 24/@bs;
+        line-height: 26/@bs;
+
+        .line1();
+      }
+    }
+  }
+}

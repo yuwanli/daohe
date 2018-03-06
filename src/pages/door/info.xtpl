@@ -1,0 +1,14 @@
+<div class="brand_info">
+    <div class="item">分店名称：{{name || '无'}}</div>
+    <div class="item">人均：{{pcc || '无'}}</div>
+    <div class="item">星级：{{start || '无'}}</div>
+    <div class="item">口味：{{taste || '无'}}</div>
+    <div class="item">环境：{{env || '无'}}</div>
+    <div class="item">服务：{{server || '无'}}</div>
+    <div class="item">评论数：{{comment || '无'}}</div>
+    <div class="item">餐位数：{{table || '无'}}</div>
+    <div class="item">城市：{{province_label}} {{city_label}} {{area_label}} {{addr}}</div>
+    <div class="item">详细地址：{{addr || '无'}}</div>
+    <div class="item">月营收：{{revenue || '无'}}</div>
+    <div class="item">是否必吃榜：{{mast_name || '无'}}</div>
+</div>

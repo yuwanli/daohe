@@ -1,0 +1,17 @@
+{{#if(pc)}}
+<section class="JL_nav JL_nav_pc" id="JL_nav">
+    <div class="JL_nav_wrapper">
+        <a href="/index.html"><img src="/images/logo.png" class="logo" alt=""></a>
+        <ul class="menu">
+            <li class="open_menu">系列上新</li>
+            <li><a href="/about.html">品牌故事</a></li>
+            <li><a href="/connect.html">联系我们</a></li>
+        <ul>
+    </div>
+</section>
+{{else}}
+<section class="JL_nav JL_nav_h5" id="JL_nav">
+    <img src="/images/menu.png" class="menu open_menu" alt="">
+    <img src="/images/logo.png" class="logo" alt="">
+</section>
+{{/if}}

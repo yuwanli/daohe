@@ -1,0 +1,11 @@
+{{#each(this)}}
+<div class="wrapper">
+    <div class="cloum_one detail" data-status="{{status}}" data-id="{{id}}">{{title}}</div>
+    <div class="cloum_two name" data-id="{{aid}}">{{{aname}}}</div>
+    <div class="cloum_three" data-id="{{id}}">
+      {{#if(is_btn)}}
+        <div data-status="{{btn_status}}" class="btn">{{{html}}}</div>
+        {{/if}}
+    </div>
+</div>
+{{/each}}

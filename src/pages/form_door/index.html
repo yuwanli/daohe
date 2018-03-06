@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('/src/units/layout/header_daohe.html') %>
+        <title>道和品牌管理系统</title>
+</head>
+
+<body>
+    <section class="form">
+        <div class="form_nav">
+            首页 > 品牌列表 > 门店详情
+        </div>
+        <form action="" id="form">
+            <input type="hidden" name="id">
+            <div class="control">
+                <div class="label">分店名称</div>
+                <div class="con">
+                    <input name="name" type="text" placeholder="请输入分店名称">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">人均</div>
+                <div class="con">
+                    <input name="pcc" type="text" placeholder="请输入人均">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">星级</div>
+                <div class="con">
+                    <input name="start" type="text" placeholder="请输入星级">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">口味</div>
+                <div class="con">
+                    <input name="taste" type="text" placeholder="请输入口味">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">环境</div>
+                <div class="con">
+                    <input name="env" type="text" placeholder="请输入环境">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">服务</div>
+                <div class="con">
+                    <input name="server" type="text" placeholder="请输入服务">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">评论数</div>
+                <div class="con">
+                    <input name="comment" type="text" placeholder="请输入评论数">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">餐位数</div>
+                <div class="con">
+                    <input name="table" type="text" placeholder="请输入餐位数">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">城市选择</div>
+                <div class="con">
+                    <select name="province" id="province">
+                        <option value="">请选择省份</option>
+                    </select>
+
+                    <select name="city" id="city">
+                        <option value="">请选择城市</option>
+                    </select>
+
+                    <select name="area" id="area">
+                        <option value="">请选择区</option>
+                    </select>
+
+                </div>
+                <input type="hidden" name="province_label" id="province_label">
+                <input type="hidden" name="city_label" id="city_label">
+                <input type="hidden" name="area_label" id="area_label">
+            </div>
+            <div class="control">
+                <div class="label">详细地址</div>
+                <div class="con">
+                    <input name="addr" type="text" placeholder="请输入详细地址">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">月营收(万)</div>
+                <div class="con">
+                    <input name="revenue" type="text" placeholder="请输入月营收(万)">
+                </div>
+            </div>
+            <div class="control">
+                <div class="label">是否必吃榜</div>
+                <div class="con">
+                    <span>
+                        <input value="1" name="mast" type="radio">是</span>
+                    <span>
+                        <input checked value="2" name="mast" type="radio">否</span>
+                </div>
+            </div>
+        </form>
+        <div class="btnGroup">
+            <div class="btn back">返回</div>
+            <div class="btn sure">提交</div>
+        </div>
+    </section>
+    <script type="text/javascript" src="/assets_daohe/libs/zepto.min.js"></script>
+</body>
+
+</html>
