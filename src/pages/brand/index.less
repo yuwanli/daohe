@@ -148,21 +148,17 @@ body {
   }
   &_content {
     background-color: #fff;
-    .text {
-      .item {
-        display: block;
-      }
-    }
     .item {
       display: flex;
       overflow: hidden;
       align-items: center;
+      // white-space: nowrap;
+      box-sizing: border-box;
       // justify-content: space-between;
-      padding: 0 30 / @bs;
-      height: 80 / @bs;
+      padding: 10 / @bs 30 / @bs;
+      min-height: 80 / @bs;
       text-overflow: ellipsis;
-      white-space: nowrap;
-      line-height: 80 / @bs;
+      line-height: 50 / @bs;
 
       .border-bottom1px;
       &.no-data {

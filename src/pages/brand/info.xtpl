@@ -1,4 +1,4 @@
-<div class="brand_info text">
+<div class="brand_info">
     <div class="item">品类：{{sort_name || '无'}}</div>
     <div class="item">成立时间：{{cdate || '无'}}</div>
     <div class="item">公司名称：{{company || '无'}}</div>
